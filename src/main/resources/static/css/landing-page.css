@@ -1,0 +1,331 @@
+@font-face {
+    font-family: "Roboto"; 
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "RobotoBold"; 
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: normal; 
+} 
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', serif;
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    font-family: 'RobotoBold', serif;
+    font-weight: 500;
+}
+
+.navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.nav-item:first-child {
+    padding-left: 0;
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+li.nav-item {
+    font-family: 'RobotoBold', serif;
+    font-weight: 500;
+}
+
+li.nav-item:hover {
+    background-color: #c1ccff42;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#logoHead {
+    height: 120px;
+}
+
+#programmButton {
+    padding-left:  25px;
+    padding-right: 25px; 
+}
+
+.roundedButton {
+    border-radius: 20px;
+}
+
+.intro-header {
+    padding: 13rem 0;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../../uploads/intro.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+.intro-message {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 4em;
+}
+
+.intro-divider {
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.wrapperImage { 
+    height: 280px;
+}
+
+.loadImage {
+    border-radius: calc(.25rem - 1px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.imageAlex {
+    background-image: url(../../uploads/alex.jpg);
+}
+
+.imageMax {
+    background-image: url(../../uploads/max.jpg);
+}
+
+.grayText {
+    color: #abadb0;
+}
+
+.content-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.card {
+    margin:auto;
+}
+
+.card-our-command {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.card-transparent-border {
+    border: 0px solid transparent!important;
+}
+
+.card-program-background-color {
+    background-color: #c1cfffb0;
+ }
+
+.card-text {
+    text-align: justify;
+}
+
+.content-section-program {
+    background: url(../../uploads/programBack.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6rem 0 6rem 0;
+}
+
+.accordionStyle {
+    max-width: 450px;
+    margin: auto;
+}
+
+.darkBackground {
+    background-color: #c1ccff42;
+}
+
+.moreDarkBackground {
+    background-color: #d7dae5;
+}
+
+.form-control:focus {
+    border-color: #e6e6fa!important;
+    box-shadow: 0 0 0 0.2rem #e6e6fa!important;
+}
+ 
+.btn-link.focus, 
+.btn-link:focus,
+.btn-link:hover {
+    text-decoration: none; 
+}
+
+.btn-link,
+.btn-link:hover {
+    color: black; 
+}
+
+.content-section-contact {
+    background: url(../../uploads/backContact.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 11rem 0;
+}
+
+.contact-box-wrapper {
+   max-width: 650px;
+   margin: auto;
+}
+
+.contact-box {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff; 
+}
+
+.contact-box:before {
+    content: "";
+    float: left;
+}
+
+.contact-box-content{
+    padding: 80px;
+}
+
+.contact-box-image-wrapper{
+    width: 160px;
+    max-width: 100%;
+    margin: 20px auto 20px auto;
+}
+
+.contact-box-image{
+    background: url(../../uploads/contactImage.jpg) no-repeat center center;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.contact-link,
+.contact-link:active,
+.contact-link:hover,
+.contact-link:visited {
+    color: #000000;
+}
+
+footer {
+    padding: 30px 0;
+    background-color: #000000;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+
+    .btn-link-font-size{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media(max-width:991px) {
+    #accordion > .card {
+        width: 90%; 
+    }
+}
+
+@media(min-width:992px) {
+   
+}
+
+@media(max-width:1199px) {
+    
+}
+
+@media(max-width:576px) {
+     .intro-message > h1 {
+        font-size: 2em;
+    }
+}
+
+@media(max-width:620px) {
+    .contact-box-wrapper {
+        max-width: 300px;
+    }
+
+    .contact-box-content{
+        padding: 20px;
+    }
+}

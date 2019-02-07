@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Бюджетные путешествия</title>
+
+  <!-- Bootstrap -->
+  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+  
+  <link th:href="@{/css/landing-page.css}" rel="stylesheet">
+  <link rel="shortcut icon" th:href="@{/uploads/favicon.ico}" type="image/png">
+  <!-- Custom Fonts -->
+  <link th:href="@{/font/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="screen,projection" th:href="@{/distr/css/ui.totop.css}" />
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <base target="_blank">
+</head>
+<body>
+  <div class="container">
+    <div class="row align-items-center h-100">
+      <div class="col-xs-12 col-md-12 col-sm-12 text-center align-self-center">
+        <img th:src="@{/uploads/logo-head.png}" id="logoHead">
+      </div>
+    </div>
+    <hr class="intro-divider"> 
+  </div> 
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#AboutUs">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Team">Преимущества</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Programm">Программы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Questions">Часто задаваемые вопросы</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#Contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>  
+  </nav>
+  <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>КАК НАЧАТЬ ПУТЕШЕСТВОВАТЬ С МИНИМАЛЬНЫМИ ЗАТРАТАМИ</h1>
+                        <hr class="intro-divider">
+                        <h4>Следуй за нами!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <div id="AboutUs" class="content-section darkBackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><h1>Кто мы?</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                  <div class="wrapperImage mb-3">
+                        <div class="loadImage imageAlex">
+                        </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 text-left align-self-center">
+                     <h3 class="m-0">Александра</h3>
+                      <h6 class="m-0 grayText">Проектирую маршруты</h6>
+                      <p class="mt-3 text-justify">Мне 23 года. Я воплощаю свои сумасшедшие идеи в составлении маршрутов. Ищу дешевые перелеты, переезды, промо-коды и бюджетное жилье.</p>         
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                   <div class="wrapperImage mb-3">
+                        <div class="loadImage imageMax">
+                          
+                        </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 text-left align-self-center">
+                  <h3 class="m-0">Максим</h3>
+                      <h6 class="m-0 grayText">Проектирую маршруты</h6>
+                      <p class="mt-3 text-justify">Мне 27 лет. Я помогаю в составлении маршрута, его координации, а также отвечаю за поддержку 24/7</p>
+                </div>
+            </div>
+        </div>
+  </div>
+  <div id="Team" class="content-section">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Наша команда</h1>
+            <h3 class="mb-5" style="font-weight: 500">Имеет преимущество на рынке</h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 mt-3">
+              <div class="card card-transparent-border">
+
+                <img class="card-img-top card-our-command" th:src="@{/uploads/money-box.png}" alt="Card image money-box">
+                <div class="card-body">
+                  <p class="card-text grayText">Мы позиционируем себя как бюджетные путешественники, поэтому самое главное - цена</p>
+                  <p class="card-text">Планирование маршрута в зависимости от денежных средств, которые Вы готовы выделить</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mt-3">
+              <div class="card card-transparent-border">
+                <img class="card-img-top card-our-command" th:src="@{/uploads/chat.png}" alt="Card image chat">
+                <div class="card-body">
+                  <p class="card-text grayText">Так как Вы только начинаете путешествовать, то одно из главных условий - это поддержка</p>
+                  <p class="card-text">Поддержка 24/7 до поездки и во время поездки</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mt-3">
+              <div class="card card-transparent-border">
+                <img class="card-img-top card-our-command" th:src="@{/uploads/service.gif}" alt="Card image service">
+                <div class="card-body">
+                  <p class="card-text grayText">Отвечаем на все интересующие Вас вопросы</p>
+                  <p class="card-text">Объяснение всех нюансов, для того, чтобы не было страха отправиться в краткосрочное или долгосрочное путешествие</p>
+                </div>
+              </div>
+            </div>          
+        </div>    
+        <div class="row">
+          <div class="col-lg-12 text-center">
+             <a id="programmButton" href="#Programm" class="btn btn-dark roundedButton">Выбрать программу</a>
+          </div>
+        </div>    
+    </div>
+  </div>
+  <div class="content-section darkBackground">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr class="intro-divider"> 
+          <p class="lead text-justify">Статистика гласит, что 70% граждан Российской Федерации не имеют заграничного паспорта. А подавляющее большинство никогда не выезжало за пределы своего города/области</p>
+          <hr class="intro-divider"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="mb-5">Мы делаем людей чуточку счастливее</h1>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <div class="card card-transparent-border">
+                <i class="fa fa-building fa-5x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <p class="card-text">Разрабатываем маршрут для любого города России</p>
+                </div>
+              </div>
+            </div>  
+             <div class="col-sm-6 col-lg-6">
+              <div class="card card-transparent-border">
+                <i class="fa fa-gift fa-5x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <p class="card-text">Разыгрываем среди участников программ бесплатные билеты, проживание в отелях, боксы для путешествий</p>
+                </div>
+              </div>
+            </div>        
+        </div>  
+        <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <div class="card card-transparent-border">
+                <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <p class="card-text">За 3 года мы вдвоем объездили 20 стран мира, работая официантом и программистом.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+              <div class="card card-transparent-border">
+                <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <p class="card-text">Ваш маршрут будет проработан нами от проезда в аэропорт/вокзал до осмотра достопримечательностей и похода в кафе.</p>
+                </div>
+              </div>
+            </div>
+          </div>     
+    </div>
+  </div>
+  <div id="Programm" class="content-section content-section-program">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+          <h1>Программы путешествий</h1>
+          <h4 class="mb-5">Стоимость программы обговаривается непосредственно при составлении договора. В зависимости от сложности маршрута цена может как увеличиться, так и уменьшиться.</h4>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <div class="card mb-3">
+            <img th:src="@{/uploads/alexProg.jpg}" alt="alexProg image" class="card-img-top">
+            <div class="card-body darkBackground">
+              <h5 class="card-title"><strong>Заготовленный маршрут</strong></h5>
+              <p>̶<strike>5000 рублей</strike> 1000 рублей до 30 июля 2018 года</p>
+              <p class="card-text">Данный вид маршрута уже пройденный нами. Программа немного корректируется в зависимости от Ваших пожеланий и предпочтений.</p>
+              <!-- <a href="#accordionQuestionnaire" class="btn btn-dark roundedButton">Заполнить анкету</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="card mb-3">
+            <img th:src="@{/uploads/maxProg.jpg}" alt="maxProg image" class="card-img-top">
+            <div class="card-body darkBackground">
+              <h5 class="card-title"><strong>Индивидуальный маршрут</strong></h5>
+              <p>̶<strike>5000 рублей</strike> 1000 рублей до 30 июля 2018 года</p>
+              <p class="card-text">Данный вид маршрута составляется непосредственно под Вас в зависимости от Ваших пожеланий, денежных средств, количества человек.</p>
+              <!-- <a href="#accordionQuestionnaire" class="btn btn-dark roundedButton">Заполнить анкету</a> -->
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row mt-5">
+          <div id="accordionQuestionnaire" class="accordionStyle">
+          <div class="card card-transparent-border card-program-background-color">
+            <div class="card-header moreDarkBackground" id="headingQuestionnaireOne">
+              <a class="btn btn-link accordionButton" data-toggle="collapse" data-target="#collapseQuestionnaireOne" aria-expanded="false" aria-controls="collapseQuestionnaireOne">
+                Заполнить анкету
+              </a>     
+            </div>
+            <div id="collapseQuestionnaireOne" class="collapse" aria-labelledby="headingQuestionnaireOne" data-parent="#accordionQuestionnaire">
+              <div class="card-body">
+                <div class="row">
+                 <div class="col-lg-12">
+                  <h1>Анкета</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+<<<<<<< HEAD
+                    <form th:action="@{/travelCheap}" th:object="${message}" method="post">
+=======
+                    <form action="#" th:action="@{/travelCheap/send}" th:object="${message}" method="post">
+>>>>>>> parent of 20589c5... added message creating logic
+                      <div class="form-group">
+                        <label for="formControlInputEmail">E-mail</label>
+                        <input type="email" class="form-control" id="formControlInputEmail" placeholder="name@example.com"
+                               th:field="*{clientEmail}" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="formControlInputName">Имя</label>
+                        <input id="formControlInputName" class="form-control" type="text" placeholder="Введите имя..."
+                               th:field="*{clientName}" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="formControlInputTelefon">Телефон</label>
+                        <input id="formControlInputTelefon" class="form-control" type="text" placeholder="Введите телефон..."
+                               th:field="*{clientTelephoneNumber}" required>
+                      </div>
+                      <div class="form-group">
+                        <p>Путешествовали Вы раньше?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" name="RadiosTrip" type="radio" id="RadiosYEStrip" value="1" checked>
+                          <label class="form-check-label" for="RadiosYEStrip">да</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" name="RadiosTrip" type="radio" id="RadiosNotrip" value="0">
+                          <label class="form-check-label" for="RadiosNotrip">нет</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <p>Боитесь ли Вы летать?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" name="RadiosFly" type="radio" id="RadiosYESFly" value="1" checked>
+                          <label class="form-check-label" for="RadiosYESFly">да</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" name="RadiosFly" type="radio" id="RadiosNoFly" value="0">
+                          <label class="form-check-label" for="RadiosNoFly">нет</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <p>Имеются ли индивидуальные особенности, препятствующие перелету</p>
+                        <div class="form-check">
+                          <input class="form-check-input" name="RadiosMed" type="radio" id="RadiosYESMed" value="1" checked>
+                          <label class="form-check-label" for="RadiosYESMed">да</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" name="RadiosMed" type="radio" id="RadiosNoMed" value="0">
+                          <label class="form-check-label" for="RadiosNoMed">нет</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="formControlTextarea">Диапазон денежных средств, которые готовы потратить на путешествие</label>
+                        <textarea class="form-control" id="formControlTextarea" rows="3"  th:field="*{comment}"></textarea>
+                      </div>
+                       <button type="submit" value="Submit" class="btn btn-dark roundedButton mt-3">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="Questions" class="content-section moreDarkBackground">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Часто задаваемые вопросы</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-section darkBackground">
+    <div class="container">
+     <!--  <div class="row">
+       <div class="col-lg-12"> -->
+          <div id="accordion" class="accordionStyle">
+            <div class="card mb-1 card-transparent-border">
+              <div class="card-header card-transparent-border moreDarkBackground" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" 
+                  aria-controls="collapseOne">
+                   А что можно брать с собой в путешествие?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body moreDarkBackground">
+                  Берите все. Никто Вам не может запретить, но если вы летите бюджетно - забудьте о багаже. Только ручная кладь, только 8 кг.
+          Как собирать правильный багаж, как экономить на перелетах мы научим Вас в наших программах.
+                </div>
+              </div>
+            </div>
+            <div class="card mb-1 card-transparent-border">
+              <div class="card-header card-transparent-border moreDarkBackground" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Где найти дешевые билеты?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body moreDarkBackground">
+                  Для этого есть мы. Вам не надо ничего искать. Мы найдём те самые дешевые билеты, поможем оформить, объясним все нюансы.
+                </div>
+              </div>
+            </div>
+            <div class="card mb-1 card-transparent-border">
+              <div class="card-header card-transparent-border moreDarkBackground" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    А если эти билеты фикция. Что делать?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body moreDarkBackground">
+                  Мы покупали билеты как на официальных сайтах, так и на сайтах, которые агрегируют авиабилеты.
+          Всегда улетали и возвращались.
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--   </div>
+            </div> -->
+    </div>
+  </div>
+  <div class="content-section">
+     <div class="container">
+       <h1 class="mb-5">ВСЕ САМОЕ ИНТЕРЕСНОЕ</h1>
+       <h2 class="mb-5">О пройденных маршрутах можно прочитать в instagram</h2>
+     </div>
+  </div>
+  <div id ="Contacts" class="content-section content-section-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="contact-box-wrapper">
+            <div class="contact-box">
+              <div class="contact-box-content">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1>Способ связи</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="contact-box-image-wrapper">
+                        <div class="contact-box-image"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p><strong>Viber/WhatsApp:</strong> +7 999 999 99 99</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p><strong>E-mail:</strong> travel_cheap@mail.ru</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p>Severodvinsk</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="fa-stack fa-lg">
+                      <a class="contact-link" href="https://www.instagram.com/koroleaa/">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                      </a>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                      <a class="contact-link" href="https://vk.com/alexandrakoroleva_a">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                      </a>
+                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+     </div>
+    </div>    
+  </div>
+  <footer>
+    <div class="contentsection">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-12 justify-content-end">
+            <a href="mailto:travel_cheap@mail.ru" class="float-right" style="text-decoration: none;"><p style="color: #FFF">travel_cheap@mail.ru</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script th:src="@{/js/scroll.js}"></script>
+  <script th:src="@{/distr/js/easing.js}" type="text/javascript"></script>
+  <script th:src="@{/distr/js/jquery.ui.totop.js}" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };*/
+    $().UItoTop({ easingType: 'easeOutQuart' });
+ 
+    });
+  </script>
+</body>
+</html>
