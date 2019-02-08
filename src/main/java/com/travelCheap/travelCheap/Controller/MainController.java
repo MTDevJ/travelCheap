@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
@@ -29,13 +28,8 @@ public class MainController {
         return "mainPage";
     }
 
-<<<<<<< HEAD
-    @PostMapping("/travelCheap")
-    public String sendMessage(@ModelAttribute @Valid Message message, RedirectAttributes attributes, Model model){
-=======
     @PostMapping("/travelCheap/send")
-    public String sendMessage(@ModelAttribute @Valid Message message){
->>>>>>> parent of 20589c5... added message creating logic
+    public String sendMessage(@ModelAttribute @Valid Message message, Model model){
 
         Message msg = new Message();
 
